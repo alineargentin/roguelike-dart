@@ -7,7 +7,10 @@ import 'package:roguelike/ponto_2d.dart';
 class Roguelike {
   // Constantes
   static final String SIMBOLO_PAREDE = "#";
-  static final int QUANTIDADE_CRIATUDAS = 60;
+  static final int QUANTIDADE_CRIATUDAS = 10;
+  static final int QUANTIDADE_Carneiros = 20;
+  static final int QUANTIDADE_Lobos = 20;
+  static final int QUANTIDADE_Tesouros = 5;
   static final int QUANTIDADE_VIDAS = 2;
   static final double FATOR_PROFUNDIDADE = 2.0;
 
@@ -42,6 +45,9 @@ class Roguelike {
         .preencher(SIMBOLO_PAREDE, true)
         .criarCaminho(posicao.x, posicao.y, passos)
         .criarCriaturas(QUANTIDADE_CRIATUDAS)
+        .criaCarneiro(QUANTIDADE_Carneiros)
+        .criaLobos(QUANTIDADE_Lobos)
+        .criaTesouro(QUANTIDADE_Tesouros)
         .build();
 
     // Coloca o jogador dentro do mundo

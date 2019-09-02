@@ -3,6 +3,8 @@ import 'package:roguelike/mundo.dart';
 import 'package:roguelike/personagem.dart';
 import 'package:roguelike/ponto_2d.dart';
 
+//package:roguelike/
+
 // Classe Jogador é derivada (filha) da classe Personagem
 class Jogador extends Personagem {
   // Constantes
@@ -13,11 +15,12 @@ class Jogador extends Personagem {
   static final String SIMBOLO_JOGADOR = "@";
 
   int _vidas; // Variável privada (_nomeDaVariavel)
+  int _dinheiro=0;
   int passos; // Variável publica
 
   // Getter para variável vida
   int get vidas => _vidas;
-
+  int get dindin => _dinheiro;
   // Construtor padrão + Construtor do pai (super)
   Jogador(Ponto2D posicao, String simbolo, this._vidas)
       : super(posicao, simbolo) {
@@ -31,6 +34,9 @@ class Jogador extends Personagem {
   // @dano: valor que será descontado da vida do jogador
   void tomarDano(int dano) {
     this._vidas -= dano;
+  }
+  void dinheiros(int moedas) {
+    this._dinheiro += moedas;
   }
 
   // Implementação do método abstrato atualizar
