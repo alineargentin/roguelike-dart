@@ -1,5 +1,5 @@
 # Roguelike
-
+// ALINE ARGENTIN - DANTRICIA MARIA - FELIPE AMBROZINI- LUCAS PIRES
 Este projeto faz parte das minhas aulas de programação mobile com Flutter, porém todo o código está escrito em Dart.
 
 <p align="center">
